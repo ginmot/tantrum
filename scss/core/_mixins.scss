@@ -1,0 +1,13 @@
+@import "variables";
+
+//module MISC
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin vertical-align($block: inline-block, $align: middle) {
+  display: $block;
+  vertical-align: $align;
+}
