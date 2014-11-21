@@ -5,7 +5,22 @@
 //module BACKGROUND COLORS
 
 //module TEXT COLORS
+$text-primary: #313338;
+$text-content: #4d4d4d;
 
 //module BORDERS
 
 //module LISTS
+
+//module FONT STYLES
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+%font-italic {
+  font-weight: $font-regular;
+  font-style: italic;
+}
+
+$font-family-base: 'Roboto', sans-serif !default;
