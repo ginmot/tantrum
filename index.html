@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta content="charset=UTF-8">
+    <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500,300' rel='stylesheet' type='text/css'>
     <link href="content/styles/site-styles.css" rel="stylesheet" type="text/css">
     <title></title>
 </head>
 <body>
+<header class="page-header clearfix">
+    <div class="pull-left">
+        <a href="/tantrum/" class="nav-brand">Tantrum</a>
+    </div>
+
+    <div class="pull-right">
+        <a class="username">
+            <span class="user">John Doe</span>
+            <img class="user-avatar" src="content/images/avatar.png" alt="user avatar">
+        </a>
+    </div>
+</header>
+
+<div class="page-container">
+    <aside class="sidebar">
+
+        <form class="nav-search">
+            <input type="search" class="search-input" placeholder="Paieška...">
+            <button type="submit" class="btn-search">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+        </form>
+
+        <nav class="page-nav">
+            <a href="#nolink">
+                <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+                Tiekėjai
+            </a>
+            <a href="#nolink">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                Užsakymai
+            </a>
+            <a href="#nolink">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                Vartotojai
+            </a>
+            <a href="#nolink">
+                <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                Statistika
+            </a>
+        </nav>
+    </aside>
+    <div class="page-content"></div>
+</div>
 </body>
 </html>

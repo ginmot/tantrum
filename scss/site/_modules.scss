@@ -1,1 +1,52 @@
 @import "../core/all";
+
+//module USERNAME DROPDOWN
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  margin: -5px 0 0 10px;
+}
+
+.username {
+  padding: 0 15px;
+  line-height: 40px;
+  color: $text-secondary;
+  font-size: 13px;
+
+  &:hover {
+    color: $white;
+
+    .user:before {
+      border-top-color: $white;
+    }
+  }
+}
+
+.user {
+  position: relative;
+  padding-right: 15px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+    @include triangle (8px, $text-secondary, down);
+  }
+}
+
+//module ADDITIONAL CLASSES
+.full-width {
+  width: 100%;
+}
+
+.col-center {
+  margin: 0 auto;
+  float: none !important;
+}
+
+.align-center {
+  text-align: center;
+}
