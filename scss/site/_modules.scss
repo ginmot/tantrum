@@ -50,3 +50,21 @@
 .align-center {
   text-align: center;
 }
+
+//module HEADER
+.content-header {
+  margin-bottom: 15px;
+}
+
+//module BUTTON GRUPS
+.btn-group {
+  .glyphicon {
+    margin-right: 3px;
+    font-size: 12px;
+  }
+
+  .btn-default {
+    background-color: lighten(#e6e6e6, 8%);
+    font-weight: $font-medium;
+  }
+}

@@ -26,18 +26,8 @@ section, aside, footer, header {
 
 //module SIDEBAR
 .sidebar {
+  position: absolute;
   width: 230px;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    width: 230px;
-    background-color: $bg-sidebar;
-  }
 }
 
 .page-nav {
@@ -73,13 +63,16 @@ section, aside, footer, header {
   }
 }
 
-.page-content {
-  margin-left: 230px;
+.page-container {
+  position: relative;
+  background-color: $bg-sidebar;
+  height: 100%;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 20px;
+.page-content {
+  margin-left: 230px;
+  background-color: $white;
+  height: 100%;
 }
 
 //module SEARCH FORM
@@ -137,4 +130,8 @@ section, aside, footer, header {
   &:hover {
     color: #888888;
   }
+}
+
+.wrapper {
+  padding: 20px;
 }
