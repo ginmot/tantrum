@@ -1,0 +1,77 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+    </button>
+    <h4 class="modal-title" id="exampleModalLabel">Naujas Tiekėjas</h4>
+</div>
+
+<div class="modal-body">
+    <form role="form">
+        <div class="form-group">
+            <label for="supplier">Tiekėjas</label>
+            <input type="text" class="form-control" id="supplier">
+        </div>
+        <fieldset>
+            <legend>Adresas</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="address" placeholder="Adresas">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="city" placeholder="Miestas">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kontaktinis Asmuo</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Vardas">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastname" placeholder="Pavardė">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kontaktiniai duomenys</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="phone" placeholder="Telefonas">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="El. paštas">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tiekiamos prekės</legend>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-info js-add">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Sukurti</button>
+</div>

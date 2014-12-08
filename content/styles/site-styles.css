@@ -44,7 +44,7 @@ h3, em { font-weight: 400; font-style: italic; }
 
 .user-avatar { width: 24px; height: 24px; margin: -5px 0 0 10px; }
 
-.username { padding: 0 15px; line-height: 40px; color: #888888; font-size: 13px; }
+.username { padding: 0 20px; line-height: 40px; color: #888888; font-size: 13px; }
 .username:hover { color: #ffffff; }
 .username:hover .user:before { border-top-color: #ffffff; }
 
@@ -61,6 +61,17 @@ h3, em { font-weight: 400; font-style: italic; }
 
 .btn-group .glyphicon { margin-right: 3px; font-size: 12px; }
 .btn-group .btn-default { background-color: #fafafa; font-weight: 500; }
+
+.row-with-buttons { position: relative; padding-right: 48px; }
+
+.btn-holder { position: absolute; bottom: 0; right: 0; }
+
+.hide { display: none; }
+
+.modal-open { position: relative; }
+.modal-open:before { content: ''; position: absolute; top: 0; right: 0; left: 0; bottom: 0; z-index: 100; background-color: #000; opacity: 0.5; }
+
+.modal-backdrop { background-color: transparent !important; }
 
 h3, em { font-weight: 400; font-style: italic; }
 
@@ -1090,7 +1101,7 @@ table td[class*="col-"], table th[class*="col-"] { position: static; float: none
 
 fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
 
-legend { display: block; width: 100%; padding: 0; margin-bottom: 20px; font-size: 21px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5; }
+legend { display: block; width: 100%; padding: 0 0 5px 0; margin-bottom: 15px; font-size: 14px; font-weight: 700; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5; }
 
 label { display: inline-block; max-width: 100%; margin-bottom: 5px; font-weight: bold; }
 
@@ -1925,7 +1936,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media (min-width: 768px) { .modal-dialog { width: 600px; margin: 30px auto; }
   .modal-content { -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
-  .modal-sm { width: 300px; } }
+  .modal-sm { width: 400px; } }
 @media (min-width: 992px) { .modal-lg { width: 900px; } }
 .tooltip { position: absolute; z-index: 1070; display: block; visibility: visible; font-family: "Roboto", sans-serif; font-size: 12px; font-weight: normal; line-height: 1.4; opacity: 0; filter: alpha(opacity=0); }
 .tooltip.in { opacity: 0.9; filter: alpha(opacity=90); }
@@ -2102,6 +2113,11 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 h3, em { font-weight: 400; font-style: italic; }
 
 h3, em { font-weight: 400; font-style: italic; }
+
+.table > tbody > tr.active td, .table > thead > tr.active td { background-color: #08C; color: #ffffff; }
+.table > tbody > tr.active td a, .table > thead > tr.active td a { color: #002233; }
+.table > tbody > tr.active td .btn, .table > thead > tr.active td .btn { color: #ffffff; }
+.table > tbody > tr > td, .table > tbody > tr > th, .table > thead > tr > td, .table > thead > tr > th { padding: 8px 15px; }
 
 h3, em { font-weight: 400; font-style: italic; }
 

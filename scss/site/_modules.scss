@@ -8,7 +8,7 @@
 }
 
 .username {
-  padding: 0 15px;
+  padding: 0 20px;
   line-height: 40px;
   color: $text-secondary;
   font-size: 13px;
@@ -56,7 +56,7 @@
   margin-bottom: 15px;
 }
 
-//module BUTTON GRUPS
+//module BUTTON GROUP
 .btn-group {
   .glyphicon {
     margin-right: 3px;
@@ -67,4 +67,39 @@
     background-color: lighten(#e6e6e6, 8%);
     font-weight: $font-medium;
   }
+}
+
+.row-with-buttons {
+  position: relative;
+  padding-right: 48px;
+}
+
+.btn-holder {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.modal-open {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0.5;
+  }
+}
+
+.modal-backdrop {
+  background-color: transparent !important;
 }

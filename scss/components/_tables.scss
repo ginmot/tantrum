@@ -1,1 +1,30 @@
 @import "../core/all";
+
+.table {
+  > tbody,
+  > thead {
+    > tr {
+
+      &.active {
+        td {
+          background-color: $bg-active-row;
+          color: $white;
+
+          a {
+            color: darken($bg-active-row, 30%);
+          }
+
+          .btn {
+            color: $white;
+          }
+        }
+      }
+
+      > td,
+      > th {
+        padding: 8px 15px;
+      }
+    }
+  }
+
+}

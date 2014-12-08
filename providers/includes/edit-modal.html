@@ -1,0 +1,165 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+    </button>
+    <h4 class="modal-title" id="exampleModalLabel">Naujas Tiekėjas</h4>
+</div>
+
+<div class="modal-body">
+    <form role="form">
+        <div class="form-group">
+            <label for="supplier">Tiekėjas</label>
+            <input type="text" class="form-control" id="supplier" value="UAB Acme">
+        </div>
+        <fieldset>
+            <legend>Adresas</legend>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="address" placeholder="Adresas" value="Pušų g. 14">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="city" placeholder="Miestas" value="Vilnius">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kontaktinis Asmuo</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Vardas" value="Aldona">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastname" placeholder="Pavardė" value="Grybaitė">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kontaktiniai duomenys</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="phone" placeholder="Telefonas"
+                               value="862955090 ">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="El. paštas"
+                               value="aldona@example.com">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tiekiamos prekės</legend>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="TV priedai">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-info js-add">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="Dėklai ir krepšiai">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-default js-delete">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="Garso kolonėlės">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-default js-delete">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="Mobilieji įrenginiai">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-default js-delete">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="Smulki buitinė technika">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-default js-delete">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="Laikmenos">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-default js-delete">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="CD/DVD dėklai">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-default js-delete">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="Ausinės">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-default js-delete">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="Mikrofonai">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-default js-delete">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group row-with-buttons">
+                <input type="text" class="form-control" id="goods" value="Pelės">
+
+                <div class="btn-holder">
+                    <button type="button" class="btn btn-default js-delete">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Redaguoti</button>
+</div>

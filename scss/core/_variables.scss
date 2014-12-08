@@ -6,6 +6,7 @@ $white: #ffffff;
 
 //module BACKGROUND COLORS
 $bg-sidebar: #716885;
+$bg-active-row: #08C;
 
 //module TEXT COLORS
 $text-primary: #313338;
@@ -29,4 +30,6 @@ $font-bold: 700;
   font-style: italic;
 }
 
+//bootstrap override
 $font-family-base: 'Roboto', sans-serif !default;
+$modal-sm: 400px !default;
