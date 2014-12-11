@@ -99,6 +99,13 @@ $(document).ready(function () {
         });
     };
 
+    $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    });
+
+    $('.dropdown-toggle').dropdown();
+
     //init functions
     openModal($('.js-open-modal'));
     bulkAction();

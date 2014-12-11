@@ -11,17 +11,17 @@ button:focus, a:focus { outline: none; }
 
 section, aside, footer, header { display: block; }
 
-.sidebar { position: absolute; width: 230px; }
+.sidebar { position: absolute; width: 240px; }
 
 .page-nav { position: relative; z-index: 1; padding-top: 10px; border-top: solid 1px #605773; }
 .page-nav > a { display: block; width: 100%; padding: 10px 15px; white-space: nowrap; text-overflow: ellipsis; color: #ffffff; font-size: 14px; }
-.page-nav > a:hover, .page-nav > a.active { color: #ffffff; background-color: #4d465a; }
-.page-nav > a:hover .glyphicon, .page-nav > a.active .glyphicon { color: #ffffff; }
+.page-nav > a:hover, .page-nav > a.active, .page-nav > a:focus { color: #ffffff; background-color: #4d465a; text-decoration: none; outline: none; }
+.page-nav > a:hover .glyphicon, .page-nav > a.active .glyphicon, .page-nav > a:focus .glyphicon { color: #ffffff; }
 .page-nav > a .glyphicon { margin-right: 5px; font-size: 12px; color: #b8b4c2; }
 
 .page-container { position: relative; height: 100%; }
 
-.page-content { margin-left: 230px; background-color: #ffffff; height: 100%; }
+.page-content { margin-left: 240px; background-color: #ffffff; height: 100%; }
 
 .nav-search { position: relative; background-color: #564e66; margin: 10px 0; }
 
@@ -44,9 +44,15 @@ h3, em { font-weight: 400; font-style: italic; }
 
 .user-avatar { width: 24px; height: 24px; margin: -5px 0 0 10px; }
 
-.username { padding: 0 20px; line-height: 40px; color: #888888; font-size: 13px; }
+.username { padding: 0 20px; line-height: 40px; color: #888888; font-size: 13px; background: transparent; border: 0; }
 .username:hover { color: #ffffff; }
 .username:hover .user:before { border-top-color: #ffffff; }
+
+.dropdown.open .username { color: #ffffff; }
+.dropdown.open .user:before { border-top-color: #ffffff; }
+
+.dropdown-menu { border-radius: 0 !important; left: inherit !important; right: 15px; margin: 0 !important; }
+.dropdown-menu:before { content: ''; height: 0; width: 0; border-left: 7.5px solid transparent; border-right: 7.5px solid transparent; border-bottom: 7.5px solid #ffffff; position: absolute; right: 8px; top: -7.5px; }
 
 .user { position: relative; padding-right: 15px; }
 .user:before { content: ''; position: absolute; top: 0; bottom: 0; right: 0; margin: auto 0; height: 0; width: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid #888888; }
@@ -58,6 +64,7 @@ h3, em { font-weight: 400; font-style: italic; }
 .align-center { text-align: center; }
 
 .content-header { margin-bottom: 15px; }
+.content-header .checkbox { margin-bottom: 25px; }
 
 .btn-group .glyphicon { margin-right: 3px; font-size: 12px; }
 .btn-group .btn-default { background-color: #fafafa; font-weight: 500; }
@@ -74,6 +81,22 @@ h3, em { font-weight: 400; font-style: italic; }
 .modal-backdrop { background-color: transparent !important; }
 
 .legend-no-border { padding: 0; margin-bottom: 5px; border: 0; }
+
+.filter-border { border-right: 1px solid #4A4A4A; }
+
+.nav-tabs { margin-top: 20px; }
+.nav-tabs li.active > a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus { background-color: #ffffff !important; color: #4d4d4d !important; border-top: solid 2px #4f8edc !important; }
+.nav-tabs > li > a { border-radius: 0 !important; }
+
+.tab-content { border: solid 1px #ddd; border-top: 0; }
+
+.tab-pane { padding: 25px 15px; }
+
+.filter-row { margin-bottom: 30px; }
+
+.pagination.sm-margin-top { margin-top: 5px; }
+.pagination.no-margin-top { margin-top: 0; }
+.pagination.no-margin-bottom { margin-bottom: 0; }
 
 h3, em { font-weight: 400; font-style: italic; }
 
@@ -1088,9 +1111,9 @@ table td[class*="col-"], table th[class*="col-"] { position: static; float: none
 
 .table-hover > tbody > tr > td.warning:hover, .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr.warning:hover > th { background-color: #faf2cc; }
 
-.table > thead > tr > td.danger, .table > thead > tr > th.danger, .table > thead > tr.danger > td, .table > thead > tr.danger > th, .table > tbody > tr > td.danger, .table > tbody > tr > th.danger, .table > tbody > tr.danger > td, .table > tbody > tr.danger > th, .table > tfoot > tr > td.danger, .table > tfoot > tr > th.danger, .table > tfoot > tr.danger > td, .table > tfoot > tr.danger > th { background-color: #f2dede; }
+.table > thead > tr > td.danger, .table > thead > tr > th.danger, .table > thead > tr.danger > td, .table > thead > tr.danger > th, .table > tbody > tr > td.danger, .table > tbody > tr > th.danger, .table > tbody > tr.danger > td, .table > tbody > tr.danger > th, .table > tfoot > tr > td.danger, .table > tfoot > tr > th.danger, .table > tfoot > tr.danger > td, .table > tfoot > tr.danger > th { background-color: #F59E9E; }
 
-.table-hover > tbody > tr > td.danger:hover, .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr.danger:hover > th { background-color: #ebcccc; }
+.table-hover > tbody > tr > td.danger:hover, .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr.danger:hover > th { background-color: #f38787; }
 
 .table-responsive { overflow-x: auto; min-height: 0.01%; }
 @media screen and (max-width: 767px) { .table-responsive { width: 100%; margin-bottom: 15px; overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar; border: 1px solid #ddd; }
@@ -2116,8 +2139,8 @@ h3, em { font-weight: 400; font-style: italic; }
 
 h3, em { font-weight: 400; font-style: italic; }
 
-.table > tbody > tr.active td, .table > thead > tr.active td { background-color: #08C; color: #ffffff; }
-.table > tbody > tr.active td a, .table > thead > tr.active td a { color: #002233; }
+.table > tbody > tr.active td, .table > thead > tr.active td { background-color: #249EDB; color: #ffffff; }
+.table > tbody > tr.active td a, .table > thead > tr.active td a { color: #0e3f58; }
 .table > tbody > tr.active td .btn, .table > thead > tr.active td .btn { color: #ffffff; }
 .table > tbody > tr > td, .table > tbody > tr > th, .table > thead > tr > td, .table > thead > tr > th { padding: 8px 15px; }
 .table thead > tr > th { vertical-align: top; }

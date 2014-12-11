@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500,300' rel='stylesheet'
           type='text/css'>
-    <link href="../content/styles/site-styles.css" rel="stylesheet" type="text/css">
+    <link href="../../content/styles/site-styles.css" rel="stylesheet" type="text/css">
     <title></title>
 </head>
 <body>
@@ -14,10 +14,20 @@
     </div>
 
     <div class="pull-right">
-        <a class="username">
-            <span class="user">John Doe</span>
-            <img class="user-avatar" src="../content/images/avatar.png" alt="user avatar">
-        </a>
+        <div class="dropdown">
+            <button class="username" type="button" data-toggle="dropdown" aria-haspopup="true">
+                <span class="user">Auksė Auksienė</span>
+                <img class="user-avatar" src="/tantrum/content/images/avatar.png" alt="user avatar">
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li>
+                    <a href="/tantrum/login.html">Atsijungti</a>
+                </li>
+                <li>
+                    <a href="#nolink">Nustatymai</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
 
@@ -31,19 +41,19 @@
         </form>
 
         <nav class="page-nav">
-            <a href="#nolink">
-                <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
-                Tiekėjai
+            <a class="active" href="/tantrum/manager/history/">
+                <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                Bendravimo istorija su klientu
             </a>
-            <a href="#nolink">
+            <a href="/tantrum/manager/orders/">
                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                 Užsakymai
             </a>
-            <a href="#nolink">
+            <a href="/tantrum/manager/users/">
                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                 Vartotojai
             </a>
-            <a href="#nolink">
+            <a href="/tantrum/manager/statistic/">
                 <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
                 Statistika
             </a>
@@ -52,42 +62,64 @@
 
     <div class="page-content">
         <div class="wrapper">
-            <div class="content-header">
-                <h2>Bendravimo istorija</h2>
+            <div class="clearfix content-header">
+                <div class="pull-left">
+                    <h2>Bendravimo istorija</h2>
+                </div>
+                <nav class="pull-right">
+                    <ul class="pagination sm-margin-top no-margin-bottom">
+                        <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
             <div class="panel panel-default">
-                <div class="panel-heading">UZS-3658 <a href="#"><span class="glyphicon glyphicon-envelope"
-                                                                      aria-hidden="false"></span> <span
-                        class="badge">4</span></a></div>
+                <div class="panel-heading">UZS-3658 <a href="#"> Tadas P. <span class="badge">4</span></a></div>
                 <div class="panel-body">
                     ...<br>
+
                     <p>
                         Klientas: per kiek laiko atsiųsite prekes į Šiaulius?<br>
-                        Aš: prekes atsiųsime per 5 dienas.<br>
+                        Tadas: prekes atsiųsime per 5 dienas.<br>
                         Klientas: ačiū.
                     </p>
                     <a href="#" class="btn btn-primary" role="button">Skaityti ankstenes žinutes</a>
                 </div>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">UZS-3657</div>
+                <div class="panel-heading">UZS-3657 <a href="#"> Arnas L. <span class="badge">8</span></a></div>
                 <div class="panel-body">
                     ...<br>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        tation
                         ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
                         dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                        facilisis at vero eros et accumsan et iusto odio digniss</p>
-                    <a href="#" class="btn btn-primary" role="button">Skaityti ankstenes žinutes</a>
+                        facilisis at vero eros et accumsan et iusto odio digniss
+                    </p>
+                    <a href="#" class="btn btn-primary">Skaityti ankstenes žinutes</a>
                 </div>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading">UZS-3653</div>
+                <div class="panel-heading">UZS-3653 <a href="#"> Simona R. <span class="badge">12</span></a></div>
                 <div class="panel-body">
                     ...<br>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        tation
                         ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
                         dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
                         facilisis at vero eros et accumsan et iusto odio digniss</p>
@@ -113,5 +145,10 @@
         </div>
     </div>
 </div>
+
+<script src="/tantrum/scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="/tantrum/scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="/tantrum/scripts/site.js" type="text/javascript"></script>
+
 </body>
 </html>

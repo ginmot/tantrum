@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500,300' rel='stylesheet'
+          type='text/css'>
+    <link href="/tantrum/content/styles/site-styles.css" rel="stylesheet" type="text/css">
+    <title></title>
+</head>
+<body>
+<header class="page-header clearfix">
+    <div class="pull-left">
+        <a href="/tantrum/" class="nav-brand">Tantrum</a>
+    </div>
+
+    <div class="pull-right">
+        <div class="dropdown">
+            <button class="username" type="button" data-toggle="dropdown" aria-haspopup="true">
+                <span class="user">Auksė Auksienė</span>
+                <img class="user-avatar" src="../content/images/avatar.png" alt="user avatar">
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li>
+                    <a href="">Atsijungti</a>
+                </li>
+                <li>
+                    <a href="">Nustatymai</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="page-container">
+    <aside class="sidebar">
+        <form class="nav-search">
+            <input type="search" class="search-input" placeholder="Paieška...">
+            <button type="submit" class="btn-search">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+        </form>
+
+        <nav class="page-nav">
+            <a href="/tantrum/manager/history/">
+                <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                Bendravimo istorija su klientu
+            </a>
+            <a href="/tantrum/manager/orders/">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                Užsakymai
+            </a>
+            <a href="/tantrum/manager/users/">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                Vartotojai
+            </a>
+            <a class="active" href="/tantrum/manager/statistic/">
+                <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                Statistika
+            </a>
+        </nav>
+    </aside>
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="content-header">
+                <h2>Statistika</h2>
+            </div>
+
+            <ul id="myTab" class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#tab-1">Perkamiausios Prekės</a></li>
+                <li role="presentation"><a href="#tab-2">Pelningiausi Klientai</a></li>
+                <li role="presentation"><a href="#tab-3">Metiniai Pardavimai</a></li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div id="tab-1" class="tab-pane fade in active">
+                    <div class="row filter-row">
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>Kategorija</option>
+                                <option>Nešiojami kompiuteriai</option>
+                                <option>Monitoriai</option>
+                                <option>Krepšiai</option>
+                                <option>Spausdintuvai</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>2014</option>
+                                <option>2013</option>
+                                <option>2012</option>
+                                <option>2011</option>
+                                <option>2010</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="container" style="height: 560px; margin: 0 auto; width: 100%"></div>
+                </div>
+
+                <div id="tab-2" class="tab-pane fade">
+                    <div class="row filter-row">
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>2014</option>
+                                <option>2013</option>
+                                <option>2012</option>
+                                <option>2011</option>
+                                <option>2010</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="clientsChart" style="height: 560px; margin: 0 auto;"></div>
+                </div>
+
+                <div id="tab-3" class="tab-pane fade">
+                    <div class="row filter-row">
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>2014</option>
+                                <option>2013</option>
+                                <option>2012</option>
+                                <option>2011</option>
+                                <option>2010</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="salesChart" style="height: 560px; margin: 0 auto;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade js-modal">
+    <div class="modal-dialog">
+        <div class="modal-content" id="modal-content">
+        </div>
+    </div>
+</div>
+
+<script src="/tantrum/scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="/tantrum/scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="/tantrum/scripts/highcharts.js" type="text/javascript"></script>
+<script src="/tantrum/scripts/charts.js" type="text/javascript"></script>
+<script src="/tantrum/scripts/site.js" type="text/javascript"></script>
+</body>
+</html>

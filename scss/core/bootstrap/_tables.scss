@@ -159,7 +159,7 @@ table {
 @include table-row-variant('success', $state-success-bg);
 @include table-row-variant('info', $state-info-bg);
 @include table-row-variant('warning', $state-warning-bg);
-@include table-row-variant('danger', $state-danger-bg);
+@include table-row-variant('danger', #F59E9E);
 
 
 // Responsive tables

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500,300"
+          rel="stylesheet" type="text/css">
+    <link href="/tantrum/content/styles/site-styles.css" rel="stylesheet" type="text/css">
+    <title>Sandėlio informacija</title>
+</head>
+<body>
+<header class="page-header clearfix">
+    <div class="pull-left">
+        <a href="/tantrum/" class="nav-brand">Tantrum</a>
+    </div>
+
+    <div class="pull-right">
+        <div class="dropdown">
+            <button class="username" type="button" data-toggle="dropdown" aria-haspopup="true">
+                <span class="user">Jonas Jonaitis</span>
+                <img class="user-avatar" src="/tantrum/content/images/avatar.png" alt="user avatar">
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li>
+                    <a href="/tantrum/login.html">Atsijungti</a>
+                </li>
+                <li>
+                    <a href="#nolink">Nustatymai</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="page-container">
+<aside class="sidebar">
+    <form class="nav-search">
+        <input type="search" class="search-input" placeholder="Paieška...">
+        <button type="submit" class="btn-search">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </button>
+    </form>
+
+    <nav class="page-nav">
+        <a href="/tantrum/worker/providers/">
+            <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+            Tiekėjai
+        </a>
+        <a href="/tantrum/worker/orders">
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+            Užsakymai
+        </a>
+        <a class="active" href="/tantrum/worker/warehouse/">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            Sandėlio Informacija
+        </a>
+        <a href="/tantrum/worker/history/">
+            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+            Bendravimo istorija su klientu
+        </a>
+    </nav>
+</aside>
+
+<div class="page-content">
+    <div class="wrapper">
+        <div class="content-header">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2>Sandėlio Informacija</h2>
+                </div>
+                <div class="col-md-5">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 form-group filter-border">
+                                <input type="search" class="form-control" id="search" placeholder="Paieška...">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <select class="form-control">
+                                    <option>Kategorija</option>
+                                    <option>Nešiojami kompiuteriai</option>
+                                    <option>Staliniai kompiuteriai</option>
+                                    <option>Krepšiai</option>
+                                    <option>Klaviatūros</option>
+                                    <option>Spausdintuvai</option>
+                                    <option>Antivirusinės ir kitos programos</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="pull-left">
+                <div class="checkbox">
+                    <form>
+                        <label>
+                            <input type="checkbox" id="blankCheckbox" value="option1">
+                            Visos prekės, kurių trūksta sandelyje
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <nav class="pull-right">
+                <ul class="pagination sm-margin-top">
+                    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <table class="table table-bordered table-striped js-data-table">
+            <thead>
+            <tr>
+                <th>Prekė</th>
+                <th>Kategorija</th>
+                <th>Tiekėjas</th>
+                <th>Kaina</th>
+                <th>Vieta sandelyje</th>
+                <th>Likutis</th>
+                <th width="110">&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Nešiojamasis kompiuteris ASUS K551LB-XX155H WIN8.1 i5-4200U/6GB/750GB/GT740-2GB</td>
+                <td>Nešiojami kompiuteriai</td>
+                <td>Asus shop</td>
+                <td>2499,99 Lt / 724,05 €</td>
+                <td>
+                    8 eilė, 11 vieta
+                </td>
+                <td>20</td>
+                <td class="align-center">
+                    <button type="button" class="btn btn-danger" disabled>Užsakyti</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Planšetinis kompiuteris Samsung Galaxy TAB PRO 10.1 WIFI T520 White</td>
+                <td>Planšetiniai kompiuteriai</td>
+                <td>Samsung Lietuva</td>
+                <td>1599,99 Lt / 463,39 €</td>
+                <td>8 eilė, 5 vieta</td>
+                <td>5</td>
+                <td class="align-center">
+                    <button type="button" class="btn btn-danger" disabled>Užsakyti</button>
+                </td>
+            </tr>
+            <tr class="danger">
+                <td>Monitorius DELL LCD S2340L 23 Full HD IPS/ VGA / HDMI</td>
+                <td>Motitoriai</td>
+                <td>Dell shop</td>
+                <td>539,99 Lt / 156,39 €</td>
+                <td>8 eilė, 13 vieta</td>
+                <td>0</td>
+                <td class="align-center">
+                    <button type="button" class="btn btn-danger">Užsakyti</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Komp. Krepšys GOLLA Laptop G Bag DELTA 11.6 GREEN / G1024</td>
+                <td>Krepšiai</td>
+                <td>Krepšių pasaulis</td>
+                <td>35,99 Lt / 10,42 €</td>
+                <td>6 eilė, 1 vieta</td>
+                <td>2</td>
+                <td class="align-center">
+                    <button type="button" class="btn btn-danger" disabled>Užsakyti</button>
+                </td>
+            </tr>
+            <tr>
+                <td>KREPŠYS KOMP. CANYON CNL-NB01A 13.3' GRAFFITY</td>
+                <td>Krepšiai</td>
+                <td>Krepšių pasaulis</td>
+                <td>69,99 Lt / 20,27 €</td>
+                <td>6 eilė, 1 vieta</td>
+                <td>5</td>
+                <td class="align-center">
+                    <button type="button" class="btn btn-danger" disabled>Užsakyti</button>
+                </td>
+            </tr>
+            <tr class="warning">
+                <td>Lazerinis spausdintuvas SAMSUNG SL-M2070</td>
+                <td>Spausdintuvai, kopijavimno aparatai</td>
+                <td>UAB Lazeriniai spausdintuvai</td>
+                <td>269,99 Lt / 78,19 €</td>
+                <td>3 eilė, 1 vieta</td>
+                <td>1</td>
+                <td class="align-center">
+                    <button type="button" class="btn btn-danger" disabled>Užsakyti</button>
+                </td>
+            </tr>
+            <tr>
+                <td>KREPŠYS KOMP. CASE LOGIC ETC110</td>
+                <td>Krepšiai</td>
+                <td>Krepšių pasaulis</td>
+                <td>76,99 Lt / 22,30 €</td>
+                <td>6 eilė, 1 vieta</td>
+                <td>11</td>
+                <td class="align-center">
+                    <button type="button" class="btn btn-danger" disabled>Užsakyti</button>
+                </td>
+            </tr>
+            <tr class="danger">
+                <td>Klaviatūra LOGITECH K400 LT</td>
+                <td>Klaviatūros</td>
+                <td>Klaviatūrų pasaulis</td>
+                <td>139,99 Lt / 40,54 €</td>
+                <td>3 eilė, 9 vieta</td>
+                <td>0</td>
+                <td class="align-center">
+                    <button type="button" class="btn btn-danger">Užsakyti</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Antivirus Kaspersky ANTI-VIRUS 2014 1PC 1Y BASE</td>
+                <td>Antivirusinės ir kitos programos</td>
+                <td>UAB Saugus kompiuteris</td>
+                <td>79,99 Lt / 23,17 €</td>
+                <td>3 eilė, 2 vieta</td>
+                <td>25</td>
+                <td class="align-center">
+                    <button type="button" class="btn btn-danger" disabled>Užsakyti</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="clearfix">
+            <nav class="pull-right">
+                <ul class="pagination">
+                    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade js-modal">
+    <div class="modal-dialog">
+        <div class="modal-content" id="modal-content">
+        </div>
+    </div>
+</div>
+
+<script src="/tantrum/scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="/tantrum/scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="/tantrum/scripts/site.js" type="text/javascript"></script>
+</body>
+</html>

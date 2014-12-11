@@ -12,6 +12,8 @@
   line-height: 40px;
   color: $text-secondary;
   font-size: 13px;
+  background: transparent;
+  border: 0;
 
   &:hover {
     color: $white;
@@ -19,6 +21,35 @@
     .user:before {
       border-top-color: $white;
     }
+  }
+}
+
+.dropdown {
+  &.open {
+    .username {
+      color: $white;
+    }
+
+    .user {
+      &:before {
+        border-top-color: $white;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0 !important;
+  left: inherit !important;
+  right: 15px;
+  margin: 0 !important;
+
+  &:before {
+    content: '';
+    @include triangle (15px, $white, up);
+    position: absolute;
+    right: 8px;
+    top: -7.5px;
   }
 }
 
@@ -54,6 +85,10 @@
 //module HEADER
 .content-header {
   margin-bottom: 15px;
+
+  .checkbox {
+    margin-bottom: 25px;
+  }
 }
 
 //module BUTTON GROUP
@@ -108,4 +143,54 @@
   padding: 0;
   margin-bottom: 5px;
   border: 0;
+}
+
+.filter-border {
+  border-right: 1px solid #4A4A4A;
+}
+
+.nav-tabs {
+  margin-top: 20px;
+  li.active {
+    > a,
+    a:hover,
+    a:focus {
+      background-color: $white !important;
+      color: $text-content !important;
+      border-top: solid 2px $border-active-tab !important;
+    }
+  }
+
+  > li {
+    > a {
+      border-radius: 0 !important;
+    }
+  }
+}
+
+.tab-content {
+  border: solid 1px #ddd;
+  border-top: 0;
+}
+
+.tab-pane {
+  padding: 25px 15px;
+}
+
+.filter-row {
+  margin-bottom: 30px;
+}
+
+.pagination {
+  &.sm-margin-top {
+    margin-top: 5px;
+  }
+
+  &.no-margin-top {
+    margin-top: 0;
+  }
+
+  &.no-margin-bottom {
+    margin-bottom: 0;
+  }
 }

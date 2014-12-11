@@ -27,7 +27,7 @@ section, aside, footer, header {
 //module SIDEBAR
 .sidebar {
   position: absolute;
-  width: 230px;
+  width: 240px;
 }
 
 .page-nav {
@@ -46,9 +46,12 @@ section, aside, footer, header {
     font-size: 14px;
 
     &:hover,
-    &.active {
+    &.active,
+    &:focus {
       color: $white;
       background-color: darken($bg-sidebar, 15%);
+      text-decoration: none;
+      outline: none;
 
       .glyphicon {
         color: $white;
@@ -69,7 +72,7 @@ section, aside, footer, header {
 }
 
 .page-content {
-  margin-left: 230px;
+  margin-left: 240px;
   background-color: $white;
   height: 100%;
 }
